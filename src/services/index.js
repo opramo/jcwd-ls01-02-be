@@ -12,6 +12,8 @@ const {
   fetchProductDetailsService,
 } = require("./productServices");
 
+// const { profilePictureService } = require("./profileServices");
+
 module.exports = {
   registerService,
   keepLoginService,
@@ -22,4 +24,5 @@ module.exports = {
   fetchProductsService,
   fetchProductDetailsService,
   forgotPasswordService,
+  // profilePictureService,
 };

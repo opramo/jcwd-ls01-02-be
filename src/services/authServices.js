@@ -223,6 +223,30 @@ const forgotPasswordService = async (data) => {
   }
 };
 
+// const profilePictureService = async (data) => {
+//   const { id } = data.user;
+//   let { addPhoto, editPhoto } = data.body;
+//   let sql, conn, result;
+
+//   try {
+//     conn = await dbCon.promise().getConnection();
+
+//     sql = `SELECT * FROM users WHERE id = ?`;
+//     [result] = await conn.query(sql, [id]);
+
+//     sql = `UPDATE user_details SET profile_picture = ? WHERE user_id = ?`;
+//     [result] = await conn.query(sql, [addPhoto, id]);
+
+//     sql = `UPDATE user_details SET profile_picture = ? WHERE user_id = ?`;
+//     [result] = await conn.query(sql, [editPhoto, id]);
+
+//     conn.release();
+//   } catch (error) {
+//     conn.release();
+//     throw new Error(error.message);
+//   }
+// };
+
 module.exports = {
   registerService,
   keepLoginService,
@@ -230,4 +254,5 @@ module.exports = {
   loginService,
   changePasswordProfileService,
   forgotPasswordService,
+  // profilePictureService,
 };

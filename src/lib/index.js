@@ -9,6 +9,7 @@ const {
   verifyLastToken,
 } = require("./jwt");
 const { linkGenerator } = require("./link");
+const { upload } = require("./upload");
 
 module.exports = {
   hashPassword,
@@ -21,4 +22,5 @@ module.exports = {
   verifyToken,
   verifyLastToken,
   hashMatch,
+  upload,
 };

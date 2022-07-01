@@ -7,7 +7,6 @@ const {
   loginController,
   forgotPasswordController,
   tokenPasswordController,
-  changePassword,
   changePasswordProfileController,
   resetPasswordController,
 } = require("../controllers");

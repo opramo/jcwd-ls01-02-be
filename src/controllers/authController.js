@@ -1,4 +1,5 @@
 const { dbCon } = require("../connection");
+const fs = require("fs");
 
 const {
   newDataToken,
@@ -183,6 +184,15 @@ const resetPasswordController = async (req, res) => {
   }
 };
 
+// const profilePictureController = async (req, res) => {
+//   try {
+//     const data = await profilePictureService(req.body);
+//     return res.status(200).send(data);
+//   } catch (error) {
+//     return res.status(500).send({ message: error.message });
+//   }
+// };
+
 module.exports = {
   registerController,
   keepLoginController,
@@ -194,4 +204,5 @@ module.exports = {
   changePassword,
   changePasswordProfileController,
   resetPasswordController,
+  // profilePictureController,
 };

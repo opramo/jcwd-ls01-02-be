@@ -16,6 +16,8 @@ const {
   fetchProductDetailsController,
 } = require("./productController");
 
+const { updateProfile, getUserDetails } = require("./profileControllers");
+
 module.exports = {
   newProduct,
   registerController,
@@ -31,4 +33,6 @@ module.exports = {
   fetchProductDetailsController,
   changePasswordProfileController,
   resetPasswordController,
+  updateProfile,
+  getUserDetails,
 };

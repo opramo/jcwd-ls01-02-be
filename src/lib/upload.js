@@ -83,7 +83,7 @@ const upload = (destination, fileNamePrefix) => {
     },
     filename: function (req, file, cb) {
       let originalName = file.originalname;
-      const fileAva = "AVATAR";
+      const fileAva = "PROFILE";
 
       let extention = originalName.split(".");
       let fileName;

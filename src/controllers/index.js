@@ -18,6 +18,11 @@ const {
 
 const { updateProfile, getUserDetails } = require("./profileControllers");
 
+// const {
+//   profilePictureController,
+//   getUserController,
+// } = require("./profileControllers");
+
 module.exports = {
   newProduct,
   registerController,
@@ -35,4 +40,6 @@ module.exports = {
   resetPasswordController,
   updateProfile,
   getUserDetails,
+  // profilePictureController,
+  // getUserController,
 };
